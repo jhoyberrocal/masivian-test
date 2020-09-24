@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import ComicHome from  '@/components/ComicHome.vue';
 import { mapActions, mapState } from 'vuex';
 

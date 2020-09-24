@@ -8,7 +8,7 @@
         max-width="50%"
       />
     </v-col>
-    <v-col cols="4">
+    <v-col cols="4" v-if="!comic.rate">
       <RatingForm v-on:rating="handlingRate" />
     </v-col>
   </v-row>

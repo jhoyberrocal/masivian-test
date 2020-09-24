@@ -1,6 +1,7 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+import Comic from '../views/Comic.vue';
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,11 @@ const routes = [
     path: '/collections',
     name: 'Collection',
     component: () => import('../views/Collection.vue')
+  },
+  {
+    path: '/comic/:id/:num',
+    name: 'Comic',
+    component: Comic
   }
 ]
 

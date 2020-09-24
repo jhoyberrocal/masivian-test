@@ -51,7 +51,6 @@ export default new Vuex.Store({
 
       for(let collection in newCollections) {
         for (let [key, comic] of newCollections[collection].entries()) {
-          console.log(newComic.num, comic.num);
           if (newComic.num === comic.num) {
             newCollections[collection].splice(key, 1);
           }

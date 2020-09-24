@@ -14,8 +14,8 @@
       </v-col>
       <v-col cols="12">
         <v-row v-if="collections[n].length">
-          <v-col cols="2" v-for="comic in collections[n]" :key="comic.number">
-            <v-card>
+          <v-col cols="2" v-for="(comic, idx) in collections[n]" :key="comic.number">
+            <v-card :to="`/comic/${n}/${idx}`">
               <v-img
                 :src="comic.img"
                 class="white--text align-end"
